@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2</title>
+    <link rel="stylesheet" href="css/class2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+    function onclick_myfun()
+    {
+        var first_number = document.getElementById("first_number").value;
+        var second_number = document.getElementById("second_number").value;
+        var add = Number(first_number) + Number(second_number) ;
+        document.getElementById('sum').value = add;
+    }
+    function onchange_myfun( first_number2 = 0 , second_number2 = 0)
+    {
+        //alert("Hello Uesr!");
+        var add2 = Number(first_number2) + Number(second_number2)
+        document.getElementById('sum2').value = add2;
+    }
+    function onblur_myfun(first_number3,second_number3)
+    {
+        //alert("Hello Uesr!");
+        var first_number3 = document.getElementById("first_number3").value;
+        var second_number3 = document.getElementById("second_number3").value;
+        var add3 = Number(first_number3) + Number(second_number3)
+        document.getElementById('sum3').value = add3;
+    }
+</script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
+</head>
+    <!-- nav start -->
+    <div class ="nav-bar"> 
+          <div class="Banner" >
+                <img src="image/IIUClogo.png" alt = "IIUC">
+         </div>
+        
+         <div class="Manu-bar">
+             <a href="#">HOME</a>
+             <a href="#">Page1</a>
+             <a href="#">Page2</a>
+             <a href="#">Page3</a>
+             <a href="#">Page4</a>
+             <a href="#">FAQ</a>
+         </div>
+        </div>
+    <!-- nev end -->
+    
+    <!-- sort Note -->
+    <p>This is my first website .I am learning webdesign like a new commer .<br>
+        Hopefully This course push me to do some things amazing.</p>
+
+    <!-- Table start -->
+    <table class="table-class" cellspacing="50" border="4" style="border-collapse: collapse">
+        <tr>
+            <th>Department</th>
+            <th>University</th>
+            <th>Vacancy</th>
+        </tr>
+        <tr>
+            <td style="text-align: center">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>CSE</td>
+            <td>EEE</td>
+            <td rowspan="2"> 120</td>
+        </tr>
+        <tr>
+            <td>IIUC</td>
+            <td>PCIU</td>
+
+        </tr>
+        <tr>
+            <td align="center" colspan="2">Total :</td>
+            <td>240</td>
+        </tr>
+    </table>
+    <!-- Table End -->
+
+    <!-- Partition 1 Input box + submit Button -->
+    <div class="form">
+        <input placeholder="Enter student name" type="text" name="studentName"><br>
+        <input placeholder="Enter Student ID" type="text" name="studentId"><br>
+    
+        <!-- selection box -->
+        <select name="department">
+            <option disabled selected value="Select Department">Select Department</option>
+            <option>CSE</option>
+            <option>CCE</option>
+            <option>EEE</option>
+        </select>
+    
+        <!-- submit button -->
+        <button class="button-class" name="formSubmit" value="Submit">Submit</button>
+    </div>
+    
+    <!-- Partition 2 :Paragreaph -->
+    <div class="paragraph">
+        <p>This is my first website .I am learning webdesign like a new commer .<br>
+            Hopefully This course push me to do some things amazing.<br>
+            Department of Computer Science and Engineering </p>
+    </div>
+
+    <!-- Bootstrap Table start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <h3>Sign In</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-hover table-striped">
+                            <tr>
+                                <td>Username</td>
+                                <td>
+                                    <input class="form-control" type="text" name="stuemail" id="stuemail" placeholder="Enter your Email or Username">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input class="form-control" type="password" name="pass" id="pass" placeholder="Enter your Password">
+                                </td>
+                            </tr>
+                           
+                            <tr rowspan="2">
+                                <td colspan="2" align ="center">
+                                    <input class="btn btn_signin" value="Sign In" type="submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: orange" class="Second col-md-6" >
+                <h3>Sign Up</h3>
+                <div class="row">
+                    <div class="Name_section row">
+                        <div class="col-md-6">
+                            <h4>First Name</h4>
+                            <input class="form-control" type="text" name="firstName" id="first Name" placeholder="Enter your first name">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Last Name</h4>
+                            <input class="form-control" type="text" name="lastName" id="lastName"  placeholder="Enter your last name">
+                        </div>
+                    </div>
+
+                    <div class="Email-section col-md-12">
+                        <h4>Email</h4>
+                        <input class="form-control" type="email" name="stuemail" id="stuemail"  placeholder="Enter your email">
+                    </div>
+                    <div class="Password-section row">
+                       
+                            <div class="pass col-md-6">
+                            <h4>Password</h4>
+                            <input class="form-control" type="password" name="password" id="password"  placeholder="Enter a password">
+                            <p style ="color : blue; " >  Password length at least 8 digit </p>
+                            </div>
+
+                            <div class="con-pass col-md-6">
+                                <h4>Confirm Password</h4>
+                                <input class="form-control" type="password" name="con_password" id="con_password"  placeholder="Enter password again">
+                            </div>
+                    </div>
+
+                    <div class="sign_up">
+                        <input class="btn btn_signup " value="Sign Up" type="submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Table End -->
+
+    <br> <br>
+    <!-- Javascript -->
+    <div class="java-table">
+        <table>
+            <tr>
+                <td>Enter First Number</td>
+                <td><input type="number" id="first_number" name="first_number"></td>
+            </tr>
+            <tr>
+                <td>Enter Second Number</td>
+                <td><input type="number" id="second_number" name="second_number"></td>
+            </tr>
+            <tr>
+                <td>Sum of First and Second Number</td>
+                <td><input type="number" id="sum" name="sum"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align ="center"><input type ="submit" name="" id="btn" onclick="onclick_myfun()"></td>
+            </tr>
+        </table>
+    
+        <br> <br> 
+    
+       <table >
+            <tr>
+                <td>Enter First Number</td>
+                <td><input type="number" id="first_number2" name="first_number2" onchange="onchange_myfun(this.value,getElementById('second_number2').value)" ></td>
+            </tr>
+            <tr>
+                <td>Enter Second Number</td>
+                <td><input type="number" id="second_number2" name="second_number2" onchange="onchange_myfun(getElementById('first_number2').value,this.value)"></td>
+            </tr>
+            <tr>
+                <td>Sum of First and Second Number</td>
+                <td><input type="number" id="sum2" name="sum2"></td>
+            </tr>
+        </table>
+    
+        <br> <br> 
+        
+       <table>
+            <tr>
+                <td>Enter First Number</td>
+                <td><input type="number" id="first_number3" name="first_number3" onkeyup="onblur_myfun(this.value,getElementById('second_number3'))" ></td>
+            </tr>
+            <tr>
+                <td>Enter Second Number</td>
+                <td><input type="number" id="second_number3" name="second_number3" onkeyup="onblur_myfun(getElementById('first_number3'),this.value)"></td>
+            </tr>
+            <tr>
+                <td>Sum of First and Second Number</td>
+                <td><input type="number" id="sum3" name="sum3"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input id="datepicker" name="datepicker"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Javascript End -->
+    <br> <br> <br> <br>
+
+    <!-- Footer start -->
+    
+    <div class="break">
+        <footer class="footer">
+            <div class="container">
+                <div class="flex">
+    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="#">about us</a>
+                            </li>
+                            <li>
+                                <a href="#">our services</a>
+                            </li>
+                            <li>
+                                <a href="#">privecy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">department</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help Line</h4>
+                        <ul>
+                            <li>
+                                <a href="#">faq</a>
+                            </li>
+                            <li>
+                                <a href="#">return</a>
+                            </li>
+                            <li>
+                                <a href="#">bus shedule</a>
+                            </li>
+                            <li>
+                                <a href="#">resul status</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer-col">
+                        <h4>Departments</h4>
+                        <ul>
+                            <li>
+                                <a href="#">CSE</a>
+                            </li>
+                            <li>
+                                <a href="#">EEE</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Quranic Science</a>
+                            </li>
+                            <li>
+                                <a href="#">BBA</a>
+                            </li>
+                            <li>
+                                <a href="#">Law</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <div class="social-icon">
+                            <a href=""><i class="fa fa-car"></i></a>
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <!-- Footer End -->
+
+
+
+
+</body>
+</html>
